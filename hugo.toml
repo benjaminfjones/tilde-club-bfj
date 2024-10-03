@@ -2,10 +2,7 @@ baseURL = 'https://tilde.club/~bfj/'
 languageCode = 'en-us'
 title = 'Wallach IX'
 copyright = "© Benjamin F Jones"
-
-[module]
-  [[module.imports]]
-    path = 'github.com/athul/archie'
+theme = 'archie'
 
 # Code Highlight
 pygmentsstyle = "monokai"
