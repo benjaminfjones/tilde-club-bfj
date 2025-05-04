@@ -12,7 +12,8 @@ pygmentscodefencesguesssyntax = true
 # never read the comments
 # disqusShortname = "yourDisqusShortname"
 
-paginate=3 # articles per page
+# paginate=3 # articles per page # deprecated?
+pagination.pagerSize=3
 
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
