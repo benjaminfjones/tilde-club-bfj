@@ -15,9 +15,20 @@ pygmentscodefencesguesssyntax = true
 # paginate=3 # articles per page # deprecated?
 pagination.pagerSize=3
 
+# for KaTeX
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	math = true
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 

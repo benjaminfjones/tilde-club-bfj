@@ -7,16 +7,17 @@ tags = ['mathematics', 'logic', 'paradox']
 
 ## Ross-Littlewood Paradox
 
-Ross has a vase. Littlewood has many small balls; one for each natural number 1, 2, 3, ....
+Ross has a vase. Littlewood has many small balls; one for each natural number
+$1, 2, 3, \dots$
 
-Littlewood first drops balls 1, 2, ... 10 into the vase. Ross does not like
+Littlewood first drops balls $1, 2, \ldots 10$ into the vase. Ross does not like
 that. The incident triggers the following game to start. In the game, Ross and
 Littlewood take alternating turns. In a round, Ross goes first then Littlewood
 responds.
 
-First round: Ross is mad about the balls so he removes ball 1 from the vase.
-Littlewood responds by dropping in balls 11, 12, ... 20. Second round: Ross removes ball
-2. Littlewood responds again, dropping balls 21, 22, ... 30.
+First round: Ross is mad about the balls so he removes ball $1$ from the vase.
+Littlewood responds by dropping in balls $11, 12, \ldots 20$. Second round: Ross removes ball
+$2$. Littlewood responds again, dropping balls $21, 22, \ldots 30$.
 
 This goes on...
 
@@ -42,7 +43,9 @@ So, which is it?
 The task of adding all the balls is a supertask. It has an infinite number of steps, building an infinite sized thing. Why does this one take an hour?
 
 duration is:
-- `30 + 15 + 7.5 + ...`
-- `30*1 + 30*(1/2) + 30*(1/2)^2 + ...`
-- `30*(1 + 1/2 + (1/2)^2 + ...)` <- the infinite series converges to `2`
-- `30*2 = 60` mins.
+
+* \( 30 + 15 + 7.5 + \cdots \)
+* \( 30*1 + 30*(1/2) + 30*(1/2)^2 + \cdots \)
+* \( 30*(1 + 1/2 + (1/2)^2 + \ldots) \)
+* \( 30*(\sum_{n=0}^\inf (\frac{1}{2})^n) \)  <-- infinite series converges to *2*
+* \( 30*2 = 60 \)
